@@ -134,7 +134,7 @@ export const BottomControlPanel = () => {
             />
             <span className={styles.button_text}>{t('buttons.backlog')}</span>
           </span>
-          <span
+          {/* <span
             className={styles.singleButton}
             style={{ fontSize }}
             onClick={() => {
@@ -156,7 +156,7 @@ export const BottomControlPanel = () => {
               strokeWidth={strokeWidth}
             />
             <span className={styles.button_text}>{t('buttons.replay')}</span>
-          </span>
+          </span> */}
           <span
             id="Button_ControlPanel_auto"
             className={styles.singleButton}

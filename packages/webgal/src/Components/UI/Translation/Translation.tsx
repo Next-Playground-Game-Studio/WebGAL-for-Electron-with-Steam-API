@@ -6,7 +6,7 @@ import languages, { language } from '@/config/language';
 export default function Translation() {
   const setLanguage = useLanguage();
 
-  const [isShowSelectLanguage, setIsShowSelectLanguage] = useState(false);
+  const [isShowSelectLanguage, setIsShowSelectLanguage] = useState(true); // 将 true 改为 false 以显示语言选择页面
 
   useEffect(() => {
     const lang = window?.localStorage.getItem('lang');

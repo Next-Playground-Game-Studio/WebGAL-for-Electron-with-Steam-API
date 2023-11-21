@@ -24,7 +24,7 @@ const initialOptionSet = {
   autoSpeed: playSpeed.normal, // 自动播放速度
   textSize: textSize.medium,
   vocalVolume: 100, // 语音音量
-  bgmVolume: 25, // 背景音乐音量
+  bgmVolume: 100, // 背景音乐音量
   seVolume: 100, // 音效音量
   uiSeVolume: 50, // UI音效音量
   textboxFont: textFont.song,

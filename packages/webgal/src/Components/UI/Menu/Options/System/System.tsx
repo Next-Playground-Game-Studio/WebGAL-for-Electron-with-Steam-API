@@ -106,7 +106,7 @@ export function System() {
               currentChecked={userDataState.optionData.autoSpeed}
             />
           </NormalOption>
-          <NormalOption key="option7" title={t('language.title')}>
+          {/* <NormalOption key="option7" title={t('language.title')}>
             <NormalButton
               currentChecked={userDataState.optionData.language}
               textList={Object.values(languages)}
@@ -114,7 +114,7 @@ export function System() {
                 (k) => () => setLanguage(language[k as unknown as number] as unknown as language),
               )}
             />
-          </NormalOption>
+          </NormalOption> */}
           <NormalOption key="option2" title={t('resetData.title')}>
             <NormalButton
               textList={t(
@@ -163,16 +163,16 @@ export function System() {
               currentChecked={3}
             />
           </NormalOption>
-          <NormalOption key="option3" title={t('gameSave.title')}>
+          {/* <NormalOption key="option3" title={t('gameSave.title')}>
             <NormalButton
               textList={t('gameSave.options.export', 'gameSave.options.import')}
               functionList={[exportSaves, importSaves]}
               currentChecked={2}
             />
-          </NormalOption>
-          <div className={styles.About_title_text} onClick={toggleAbout}>
+          </NormalOption> */}
+          {/* <div className={styles.About_title_text} onClick={toggleAbout}>
             <span className={styles.About_text}>{t('about.title')}</span>
-          </div>
+          </div> */}
         </>
       )}
     </div>

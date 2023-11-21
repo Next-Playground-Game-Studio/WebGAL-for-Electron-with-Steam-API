@@ -106,7 +106,7 @@ const Title: FC = () => {
             {/*   <div className={styles.Title_button_text + ' ' + styles.Title_button_text_up}>退出游戏</div> */}
             {/*   <div className={styles.Title_button_text}>EXIT</div> */}
             {/* </div> */}
-            <div
+            {/* <div
               className={styles.Title_button}
               onClick={() => {
                 playSeClickTitleButton();
@@ -115,8 +115,8 @@ const Title: FC = () => {
               onMouseEnter={playSeEnterTitleButton}
             >
               <div className={styles.Title_button_text + ' ' + styles.Title_button_text_up}>{t('extra.title')}</div>
-              {/* <div className={styles.Title_button_text}>{t('extra.subtitle')}</div> */}
-            </div>
+              <div className={styles.Title_button_text}>{t('extra.subtitle')}</div>
+            </div> */}
           </div>
         </div>
       )}

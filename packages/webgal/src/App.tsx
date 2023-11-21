@@ -12,7 +12,6 @@ import { Extra } from '@/Components/UI/Extra/Extra';
 import { BottomControlPanelFilm } from './Components/UI/BottomControlPanel/BottomControlPanelFilm';
 import GlobalDialog from '@/Components/UI/GlobalDialog/GlobalDialog';
 import DevPanel from '@/Components/UI/DevPanel/DevPanel';
-import Translation from '@/Components/UI/Translation/Translation';
 import { PanicOverlay } from '@/Components/UI/PanicOverlay/PanicOverlay';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <Provider store={webgalStore}>
-        <Translation />
         <Stage />
         <BottomControlPanel />
         <BottomControlPanelFilm />

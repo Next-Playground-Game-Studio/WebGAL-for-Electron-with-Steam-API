@@ -118,7 +118,6 @@ export const intro = (sentence: ISentence): IPerform => {
       className={chosenAnimationClass}
     >
       {e}
-      {e === '' ? '\u00a0' : ''}
     </div>
   ));
   const intro = (

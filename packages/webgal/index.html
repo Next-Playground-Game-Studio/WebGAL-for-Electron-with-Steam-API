@@ -6,7 +6,7 @@
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="manifest" href="./manifest.json" />
   <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
-  <title>WebGAL</title>
+  <title>倒计 66 日</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 </head>
@@ -67,7 +67,7 @@
             transition: text-shadow 1s;
             font-size: 175%;
 ">
-        PRESS THE SCREEN TO START
+        点击屏幕以开始
       </div>
     </div>
     <div
@@ -79,18 +79,35 @@
         flex-flow: column;
         align-items: center ">
       <div style="padding: 0 0 0.25em 0">
-        Powered by <a href="https://github.com/MakinoharaShoko/WebGAL"
-                      onclick="jump(event, 'https://github.com/MakinoharaShoko/WebGAL')">WebGAL</a> Framework
+        Powered by <a href="javascript:openwebgal()">WebGAL Framework</a> by <a href="javascript:openmahiru()">Mahiru</a>
       </div>
       <div>
-        Made with ❤ by <a href="https://github.com/MakinoharaShoko"
-                          onclick="jump(event, 'https://github.com/MakinoharaShoko')">Mahiru</a>
+        Made with Next Playground by Xiran
       </div>
     </div>
   </div>
 </div>
 <div id="panic-overlay"> <!-- 紧急回避 --> </div>
 <div id="root"></div>
+<script>
+  const { shell } = require('electron');
+  function openwebgal () {
+    shell.openExternal("https://github.com/MakinoharaShoko/WebGAL")
+  }
+  function openmahiru () {
+    shell.openExternal("https://github.com/MakinoharaShoko")
+  }
+</script>
+<script>
+  /** @type {import('steamworks.js')} */
+  try {
+    const steamworks = require('steamworks.js');
+    const clientobj = steamworks.init(2701340);
+  } catch {
+    alert("无法初始化 Steamworks Api, 请确保您已拥有此游戏并从 Steam 启动。")
+    window.close()
+  }
+</script>
 <script>
   /**
    * 在窗口大小改变时进行强制缩放
